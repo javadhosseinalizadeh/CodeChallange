@@ -60,7 +60,9 @@ while (true)
             Console.WriteLine(PasswordValidator.IsStrongPassword(password!) ? "Strong password" : "Weak password");
             break;
 
-
+        case "7":
+            LruCacheDemo.Run();
+            break;
 
         case "0":
             return;
