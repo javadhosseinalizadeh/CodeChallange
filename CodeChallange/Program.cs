@@ -43,6 +43,9 @@ while (true)
             Console.WriteLine("Result: " + string.Join(", ", uniqueManual));
             break;
 
+        case "4":
+            FizzBuzzHelper.RunFizzBuzz();
+            break;
 
 
         case "0":
