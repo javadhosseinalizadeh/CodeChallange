@@ -13,6 +13,7 @@ while (true)
     Console.WriteLine("5. Group Words by First Letter");
     Console.WriteLine("6. Password Strength Validator");
     Console.WriteLine("7. LRU Cache Demo");
+    Console.WriteLine("8. Bank Account Demo");
     Console.WriteLine("0. Exit");
     Console.Write("\nEnter your choice: ");
 
@@ -62,6 +63,10 @@ while (true)
 
         case "7":
             LruCacheDemo.Run();
+            break;
+
+        case "8":
+            BankAccountDemo.Run();
             break;
 
         case "0":
