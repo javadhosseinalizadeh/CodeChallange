@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CodeChallange.Challenges
 {
-    internal class FizzBuzzHelper
+    public static class FizzBuzzHelper
     {
+
     }
 }

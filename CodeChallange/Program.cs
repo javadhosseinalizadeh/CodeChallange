@@ -1,4 +1,5 @@
 ﻿using CodeChallange.Challenges;
+using System.Collections.Generic;
 
 Console.Title = "Code Challenge App (.NET 8)";
 while (true)
@@ -32,7 +33,17 @@ while (true)
             Console.WriteLine(StringHelper.IsPalindrome(pal!) ? "Palindrome" : "Not a palindrome");
             break;
 
-        
+        case "3":
+            var list = new List<int> { 1, 2, 2, 3, 4, 4, 5 };
+            var names = new List<string> { "Ali", "Javad", "Ali", "Nima" };
+
+            var result = ListHelper.RemoveDuplicatesLinq(list);
+            var uniqueManual = ListHelper.RemoveDuplicatesManual(names);
+
+            Console.WriteLine("Result: " + string.Join(", ", uniqueManual));
+            break;
+
+
 
         case "0":
             return;
