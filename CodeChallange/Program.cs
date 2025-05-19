@@ -26,6 +26,12 @@ while (true)
             Console.WriteLine("Reversed: " + StringHelper.ReverseString(str!));
             break;
 
+        case "2":
+            Console.Write("Enter string: ");
+            var pal = Console.ReadLine();
+            Console.WriteLine(StringHelper.IsPalindrome(pal!) ? "Palindrome" : "Not a palindrome");
+            break;
+
         
 
         case "0":
