@@ -47,6 +47,14 @@ while (true)
             FizzBuzzHelper.RunFizzBuzz();
             break;
 
+        case "5":
+            Console.Write("Enter comma-separated words: ");
+            var wordsLine = Console.ReadLine()!;
+            var words = wordsLine.Split(',').Select(w => w.Trim()).ToList();
+            WordGrouper.GroupByFirstLetter(words);
+            break;
+
+
 
         case "0":
             return;
