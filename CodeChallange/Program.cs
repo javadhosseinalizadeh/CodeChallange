@@ -54,6 +54,12 @@ while (true)
             WordGrouper.GroupByFirstLetter(words);
             break;
 
+        case "6":
+            Console.Write("Enter password: ");
+            var password = Console.ReadLine();
+            Console.WriteLine(PasswordValidator.IsStrongPassword(password!) ? "Strong password" : "Weak password");
+            break;
+
 
 
         case "0":
