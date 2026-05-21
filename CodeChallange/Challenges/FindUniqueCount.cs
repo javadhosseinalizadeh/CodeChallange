@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CodeChallange.Challenges
 {
@@ -10,6 +11,8 @@ namespace CodeChallange.Challenges
     {
         public static void UniqueCount(int[] input)
         {
+            Array.Sort(input);
+
             if (input.Length == 0)
             {
                 Console.WriteLine("Unique Count: 0");
