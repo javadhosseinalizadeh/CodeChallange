@@ -11,7 +11,7 @@ namespace CodeChallange.Challenges
     {
         public static void UniqueCount(int[] input)
         {
-            Array.Sort(input);
+            Array.Sort(input); // or just use hashset and remove duplicates
 
             if (input.Length == 0)
             {

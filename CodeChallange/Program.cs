@@ -15,6 +15,7 @@ while (true)
     Console.WriteLine("7. LRU Cache Demo");
     Console.WriteLine("8. Bank Account Demo");
     Console.WriteLine("9. Unique count of an array");
+    Console.WriteLine("10. GainMostProfit");
     Console.WriteLine("0. Exit");
     Console.Write("\nEnter your choice: ");
 
@@ -81,7 +82,10 @@ while (true)
             FindUniqueCount.UniqueCount(array);
             Console.WriteLine("New array list: " + string.Join(", ", array));
             break;
-
+        case "10":
+            int[] prices = [2, 1, 5, 3, 6, 4];
+            GainMostProfit.RunGainMostProfit(prices);
+            break;
         case "0":
             return;
 
