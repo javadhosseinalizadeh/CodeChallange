@@ -16,6 +16,7 @@ while (true)
     Console.WriteLine("8. Bank Account Demo");
     Console.WriteLine("9. Unique count of an array");
     Console.WriteLine("10. GainMostProfit");
+    Console.WriteLine("11. Rotate array");
     Console.WriteLine("0. Exit");
     Console.Write("\nEnter your choice: ");
 
@@ -85,6 +86,11 @@ while (true)
         case "10":
             int[] prices = [2, 1, 5, 3, 6, 4];
             GainMostProfit.RunGainMostProfit(prices);
+            break;
+        case "11":
+            int[] numbersForRotate = [1, 2, 3, 4, 5, 6, 7, 8];
+            int k = 3;
+            RotateArray.Rotate(numbersForRotate, k);
             break;
         case "0":
             return;

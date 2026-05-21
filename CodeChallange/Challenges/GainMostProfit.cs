@@ -11,11 +11,13 @@ namespace CodeChallange.Challenges
         public static void RunGainMostProfit(int[] prices)
         {
             int maxProfit = 0;
-            for(int i = 1; i< prices.Length - 1; i++)
+            for(int i = 0; i< prices.Length - 1; i++)
             {
                 if (prices[i + 1] > prices[i])
                 {
                     maxProfit += prices[i + 1] - prices[i];
+                    //maxProfit += Math.Max(prices[i + 1] - prices[i], 0);
+
                 }
             }
             Console.WriteLine($"max profit is : {maxProfit}");
