@@ -14,6 +14,7 @@ while (true)
     Console.WriteLine("6. Password Strength Validator");
     Console.WriteLine("7. LRU Cache Demo");
     Console.WriteLine("8. Bank Account Demo");
+    Console.WriteLine("9. Unique count of an array");
     Console.WriteLine("0. Exit");
     Console.Write("\nEnter your choice: ");
 
@@ -67,6 +68,18 @@ while (true)
 
         case "8":
             BankAccountDemo.Run();
+            break;
+        case "9":
+            //  Console.WriteLine("Enter an sorted array: ");
+            //var inputarray = Console.ReadLine();
+
+            //int[] array = inputarray
+            //    .Split(',')
+            //    .Select(x => int.Parse(x.Trim()))
+            //    .ToArray();
+            int[] array = [2, 2, 3, 3, 4, 4, 4, 5, 5, 6];
+            FindUniqueCount.UniqueCount(array);
+            Console.WriteLine("New array list: " + string.Join(", ", array));
             break;
 
         case "0":
