@@ -18,6 +18,7 @@ while (true)
     Console.WriteLine("10. GainMostProfit");
     Console.WriteLine("11. Rotate array");
     Console.WriteLine("12. ContainDuplicate");
+    Console.WriteLine("13. CheckIntersction");
     Console.WriteLine("0. Exit");
     Console.Write("\nEnter your choice: ");
 
@@ -96,6 +97,12 @@ while (true)
         case "12":
             int[] numbersForCheck = [1, 2, 3, 4, 5, 5, 7, 8];
             Console.WriteLine($"Result: {ContainDuplicate.CheckDuplicate(numbersForCheck)}"); 
+            break;
+        case "13":
+            int[] firstArray = { 1, 2, 2, 3, 4 };
+            int[] secondArraytArray = { 2, 2, 4 };
+            var resultOfIntersection =  IntersectionOfTwoArrays.CheckIntersection(firstArray, secondArraytArray);
+            Console.WriteLine(string.Join(", ", resultOfIntersection));
             break;
         case "0":
             return;
