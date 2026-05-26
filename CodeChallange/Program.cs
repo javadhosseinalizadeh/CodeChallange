@@ -1,7 +1,7 @@
 ﻿using CodeChallange.Challenges;
 using System.Collections.Generic;
 
-Console.Title = "Code Challenge App (.NET 8)";
+Console.Title = "Code Challenge App";
 while (true)
 {
     Console.Clear();
@@ -19,11 +19,13 @@ while (true)
     Console.WriteLine("11. Rotate array");
     Console.WriteLine("12. ContainDuplicate");
     Console.WriteLine("13. CheckIntersction");
+    Console.WriteLine("14. MoveZeroToEnd");
     Console.WriteLine("0. Exit");
     Console.Write("\nEnter your choice: ");
 
     var input = Console.ReadLine();
-
+    int[] firstArray = { 1,0, 2,0, 2, 3, 4 };
+    int[] secondArraytArray = { 2, 2, 4 };
     Console.Clear();
     switch (input)
     {
@@ -99,10 +101,14 @@ while (true)
             Console.WriteLine($"Result: {ContainDuplicate.CheckDuplicate(numbersForCheck)}"); 
             break;
         case "13":
-            int[] firstArray = { 1, 2, 2, 3, 4 };
-            int[] secondArraytArray = { 2, 2, 4 };
+
             var resultOfIntersection =  IntersectionOfTwoArrays.CheckIntersection(firstArray, secondArraytArray);
             Console.WriteLine(string.Join(", ", resultOfIntersection));
+            break;
+        case "14":
+            var moveZero = MoveZero.MoveZeroToEnd(firstArray);
+            Console.WriteLine(string.Join(", ", firstArray));
+
             break;
         case "0":
             return;
